@@ -37,7 +37,7 @@ echo '<div class="fixed">
       <li class="divider"></li>
 
       <!-- Dropdown -->
-      <li class="has-dropdown"><a href="http://zurb.com">Item 1</a>
+      <li class="has-dropdown"><a href="#">Item 1</a>
         <ul class="dropdown">
           <li><label>Level One</label></li>
           <li><a href="#">Sub-item 1</a></li>
@@ -57,17 +57,9 @@ echo '<div class="fixed">
           <li><a href="#">Sub-item 5</a></li>
         </ul>
       </li>
-
       <li class="divider"></li>
-
       <!-- Anchor -->
       <li><a href="#">Generic Button</a></li>
-      <li class="divider"></li>
-
-      <!-- Button -->
-      <li class="has-form show-for-large-up">
-        <a href="http://foundation.zurb.com/docs" class="button">Get Lucky</a>
-      </li>
     </ul>
   </section>
 </nav>

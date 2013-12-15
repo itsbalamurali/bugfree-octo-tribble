@@ -1,6 +1,11 @@
 <?php
 require_once("models/config.php");
 if (!securePage($_SERVER['PHP_SELF'])){die();}
+//Redirect user to registration page if not logged in
+if(!isUserLoggedIn()) { 
+	header("Location: login.php"); 
+	die(); 
+}
 require_once("models/header.php");
 
 echo "
