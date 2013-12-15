@@ -6,8 +6,12 @@ if(!isUserLoggedIn()) {
 	header("Location: login.php"); 
 	die(); 
 }
+else{ //Redirect user to account page if logged in
+	header("Location: account.php"); 
+	die();
+}
+/*
 require_once("models/header.php");
-
 echo "
 <body>";
 include("models/topbar.php");
@@ -17,7 +21,6 @@ echo "
 <div id='content'>
 <div class='small-3 columns left'>";
 include("left-nav.php");
-
 echo "
 </div>
 <div class='small-9 columns'>
@@ -25,4 +28,5 @@ echo "
 <div id='bottom'></div>
 </div>";
 include("models/footer.php");
+*/
 ?>
