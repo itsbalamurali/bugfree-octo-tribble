@@ -76,61 +76,30 @@ if(!empty($_POST))
 }
 
 require_once("models/header.php");
+
 echo "
 <body>
-<div id='wrapper'>
-<div id='content'>
+    <div class='row'>";
+echo resultBlock($errors,$successes);
+echo "
+    <div class='large-4 small-centered columns'>
 <h2>Register</h2>
 
-<div id='left-nav'>";
-include("left-nav.php");
-echo "
-</div>
-
-<div id='main'>";
-
-echo resultBlock($errors,$successes);
-
-echo "
 <div id='regbox'>
 <form name='newUser' action='".$_SERVER['PHP_SELF']."' method='post'>
 
-<p>
-<label>User Name:</label>
-<input type='text' name='username' />
-</p>
-<p>
-<label>Display Name:</label>
-<input type='text' name='displayname' />
-</p>
-<p>
-<label>Password:</label>
-<input type='password' name='password' />
-</p>
-<p>
-<label>Confirm:</label>
-<input type='password' name='passwordc' />
-</p>
-<p>
-<label>Email:</label>
-<input type='text' name='email' />
-</p>
-<p>
-<label>Security Code:</label>
+<input type='text' name='username' placeholder='Username' >
+<input type='text' name='displayname' placeholder='Display Name' >
+<input type='password' name='password' placeholder='Password'>
+<input type='password' name='passwordc' placeholder= 'confirm password'>
+<input type='text' name='email' placeholder='Email'>
 <img src='models/captcha.php'>
-</p>
-<label>Enter Security Code:</label>
-<input name='captcha' type='text'>
-</p>
-<label>&nbsp;<br>
-<input type='submit' value='Register'/>
-</p>
-
+<input name='captcha' type='text' placeholder='Captcha'>
+&nbsp;<br>
+<button class='button radius' type='submit'>Sign up</button>
 </form>
 </div>
-
 </div>
-<div id='bottom'></div>
 </div>";
 include("models/footer.php");
 ?>

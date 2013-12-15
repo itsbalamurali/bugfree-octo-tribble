@@ -76,41 +76,24 @@ if(!empty($_POST))
 }
 
 require_once("models/header.php");
-
 echo "
 <body>
-<div id='wrapper'>
-<div id='content'>
-<h2>Login</h2>
-<div id='left-nav'>";
-
-include("left-nav.php");
-
-echo "
-</div>
-<div id='main'>";
-
+    <div class='row'>";
 echo resultBlock($errors,$successes);
-
 echo "
+    <div class='large-4 small-centered columns'>
 <div id='regbox'>
-<form name='login' action='".$_SERVER['PHP_SELF']."' method='post'>
-<p>
-<label>Username:</label>
-<input type='text' name='username' />
-</p>
-<p>
-<label>Password:</label>
-<input type='password' name='password' />
-</p>
-<p>
-<label>&nbsp;</label>
-<input type='submit' value='Login' class='submit' />
-</p>
-</form>
+<form name='login' action='".$_SERVER['PHP_SELF']."' method='post' class='form-signin'>
+        <h2 align='center' class='form-signin-heading'>Login</h2>
+        <input type='text' name='username' class='form-control' placeholder='Username' autofocus>
+        <input type='password' name='password' class='form-control' placeholder='Password'>
+        <label class='checkbox'>
+          <input type='checkbox' value='remember-me'> Remember me
+        </label>
+        <button class='button radius' type='submit' >Login</button>
+      </form>
 </div>
 </div>
-<div id='bottom'></div>
 </div>";
 include("models/footer.php");
 ?>
