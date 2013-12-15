@@ -12,9 +12,9 @@ if(!empty($websiteUrl))
 {
 	$add_http = "";
 	
-	if(strpos($websiteUrl,"http://") === false)
+	if(strpos($websiteUrl,"https://") === false)
 	{
-		$add_http = "http://";
+		$add_http = "https://";
 	}
 	
 	header("Location: ".$add_http.$websiteUrl);
@@ -22,7 +22,7 @@ if(!empty($websiteUrl))
 }
 else
 {
-	header("Location: http://".$_SERVER['HTTP_HOST']);
+	header("Location: https://".$_SERVER['HTTP_HOST']);
 	die();
 }	
 
