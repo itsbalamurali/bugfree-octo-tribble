@@ -29,7 +29,6 @@ echo"
 <!-- basic styles -->
 <link rel='stylesheet' href='./assets/css/foundation.min.css' />
 <script src='./assets/js/modernizr.js'></script>
-<link href='./assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 <script src='models/funcs.js' type='text/javascript'></script>
 </head>";
 
