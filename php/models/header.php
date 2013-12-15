@@ -1,11 +1,22 @@
 <?php
 echo "
-<!DOCTYPE html>
+<!DOCTYPE html>";
+echo'<!--
+
+        .                                 .o8       oooo
+      .o8                                "888       `888
+    .o888oo oooo  oooo  ooo. .oo.  .oo.   888oooo.   888  oooo d8b
+      888   `888  `888  `888P"Y88bP"Y88b  d88" `88b  888  `888""8P
+      888    888   888   888   888   888  888   888  888   888
+      888 .  888   888   888   888   888  888   888  888   888    .o.
+      "888"  "V88V"V8P" o888o o888o o888o "Y8bod8P" o888o d888b   Y8P
+
+-->';
+echo"
 <html lang='en'>
 <head lang='en'>
 <meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <meta name='description' content=''>
 <meta name='author' content=''>
 <!-- Favicons -->
