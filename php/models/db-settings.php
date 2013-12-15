@@ -14,10 +14,10 @@ $db_table_prefix = "app_";
 else
 {
 
-$db_host = $_SERVER['OPENSHIFT_MYSQL_DB_HOST']; //Host address in ENV tunnel.pagodabox.com:3306
+$db_host = $_SERVER['OPENSHIFT_MYSQL_DB_HOST']; //Host address in ENV
 $db_name = $_SERVER['OPENSHIFT_GEAR_NAME']; //Name of Database ENV database
-$db_user = $_SERVER['OPENSHIFT_MYSQL_DB_USERNAME'];//Name of database user ENV magaly
-$db_pass = $_SERVER['OPENSHIFT_MYSQL_DB_PASSWORD']; //Password for database user ENV j4hIFZDV
+$db_user = $_SERVER['OPENSHIFT_MYSQL_DB_USERNAME'];//Name of database user ENV
+$db_pass = $_SERVER['OPENSHIFT_MYSQL_DB_PASSWORD']; //Password for database user ENV 
 
 $db_table_prefix = "app_";
 	
