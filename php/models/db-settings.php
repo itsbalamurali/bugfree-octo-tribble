@@ -1,5 +1,5 @@
 <?php
-
+$openshift_db = ''$_ENV['OPENSHIFT_MYSQL_DB_HOST']':'$_ENV['OPENSHIFT_MYSQL_DB_PORT']'';
 //Database Information
 if($_SERVER['HTTP_HOST'] == "localhost" )
 {
@@ -14,10 +14,10 @@ $db_table_prefix = "app_";
 else
 {
 
-$db_host = $_SERVER['DB1_HOST']; //Host address in ENV tunnel.pagodabox.com:3306
-$db_name = $_SERVER['DB1_NAME']; //Name of Database ENV database
-$db_user = $_SERVER['DB1_USER'];//Name of database user ENV magaly
-$db_pass = $_SERVER['DB1_PASS']; //Password for database user ENV j4hIFZDV
+$db_host = $_SERVER['OPENSHIFT_MYSQL_DB_HOST']; //Host address in ENV tunnel.pagodabox.com:3306
+$db_name = $_ENV['OPENSHIFT_GEAR_NAME']; //Name of Database ENV database
+$db_user = $_ENV['OPENSHIFT_MYSQL_DB_USERNAME'];//Name of database user ENV magaly
+$db_pass = $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD']; //Password for database user ENV j4hIFZDV
 
 $db_table_prefix = "app_";
 	
