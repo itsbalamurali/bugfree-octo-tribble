@@ -36,17 +36,18 @@ require_once("models/header.php");
 
 echo "
 <body>
+<div class='row'>
 <div id='wrapper'>
 <div id='content'>
 <h2>Activate Account</h2>
 
-<div id='left-nav'>";
+<div class='small-3 columns left'>";
 
 include("left-nav.php");
 
 echo "
 </div>
-<div id='main'>";
+<div class='small-9 columns'>";
 
 echo resultBlock($errors,$successes);
 

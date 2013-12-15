@@ -39,17 +39,20 @@ $dbpages = fetchAllPages();
 require_once("models/header.php");
 
 echo "
-<body>
+<body>";
+include("models/topbar.php");
+echo "
+<div class='row'>
 <div id='wrapper'>
 <div id='content'>
 <h2>Admin Pages</h2>
-<div id='left-nav'>";
+<div class='small-3 columns left'>";
 
 include("left-nav.php");
 
 echo "
 </div>
-<div id='main'>
+<div class='small-9 columns'>
 <table class='admin'>
 <tr><th>Id</th><th>Page</th><th>Access</th></tr>";
 

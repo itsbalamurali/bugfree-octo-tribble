@@ -4,7 +4,7 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 //Links for logged in user
 if(isUserLoggedIn()) {
 	echo "
-	<ul>
+	<ul class='side-nav'>
 	<li><a href='account.php'>Account Home</a></li>
 	<li><a href='user_settings.php'>User Settings</a></li>
 	<li><a href='logout.php'>Logout</a></li>
@@ -13,7 +13,7 @@ if(isUserLoggedIn()) {
 	//Links for permission level 2 (default admin)
 	if ($loggedInUser->checkPermission(array(2))){
 	echo "
-	<ul>
+	<ul class='side-nav'>
 	<li><a href='admin_configuration.php'>Admin Configuration</a></li>
 	<li><a href='admin_users.php'>Admin Users</a></li>
 	<li><a href='admin_permissions.php'>Admin Permissions</a></li>
@@ -24,7 +24,7 @@ if(isUserLoggedIn()) {
 //Links for users not logged in
 else {
 	echo "
-	<ul>
+	<ul class='side-nav'>
 	<li><a href='index.php'>Home</a></li>
 	<li><a href='login.php'>Login</a></li>
 	<li><a href='register.php'>Register</a></li>

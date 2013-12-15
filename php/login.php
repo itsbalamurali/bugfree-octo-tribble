@@ -78,13 +78,20 @@ if(!empty($_POST))
 require_once("models/header.php");
 echo "
 <body>
-    <div class='row'>";
+<div class='row'>
+<div class='row'>
+<h2>Login</h2>
+<div class='small-3 columns left'>";
+include("left-nav.php");
+
+echo "
+</div>
+<div class='large-4 small-centered columns panel'>";
 echo resultBlock($errors,$successes);
 echo "
-    <div class='large-4 small-centered columns'>
 <div id='regbox'>
 <form name='login' action='".$_SERVER['PHP_SELF']."' method='post' class='form-signin'>
-        <h2 align='center' class='form-signin-heading'>Login</h2>
+        <h2 align='center'>Login</h2>
         <input type='text' name='username' class='form-control' placeholder='Username' autofocus>
         <input type='password' name='password' class='form-control' placeholder='Password'>
         <label class='checkbox'>

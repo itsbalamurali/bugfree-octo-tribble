@@ -171,21 +171,22 @@ if(!empty($_POST))
 require_once("models/header.php");
 echo "
 <body>
+<div class='row'>
 <div id='wrapper'>
 <div id='content'>
 <h2>Forgot Password</h2>
-<div id='left-nav'>";
+<div class='small-3 columns left'>";
 
 include("left-nav.php");
 
 echo "
 </div>
-<div id='main'>";
+<div class='small-9 columns'>";
 
 echo resultBlock($errors,$successes);
 
 echo "
-<div id='regbox'>
+<div>
 <form name='newLostPass' action='".$_SERVER['PHP_SELF']."' method='post'>
 <p>
 <label>Username:</label>

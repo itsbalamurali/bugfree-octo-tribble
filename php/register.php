@@ -79,10 +79,17 @@ require_once("models/header.php");
 
 echo "
 <body>
-    <div class='row'>";
+<div class='row'>
+    <div class='row'>
+	<h2>Login</h2>
+<div class='small-3 columns left'>";
+include("left-nav.php");
+
+echo "
+</div>
+<div class='large-4 small-centered columns panel'>";
 echo resultBlock($errors,$successes);
 echo "
-    <div class='large-4 small-centered columns'>
 <h2>Register</h2>
 
 <div id='regbox'>

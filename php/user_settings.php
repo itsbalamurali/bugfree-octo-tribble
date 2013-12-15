@@ -98,21 +98,24 @@ if(!empty($_POST))
 
 require_once("models/header.php");
 echo "
-<body>
+<body>";
+include("models/topbar.php");
+echo "
+<div class='row'>
 <div id='wrapper'>
 <div id='content'>
 <h2>User Settings</h2>
-<div id='left-nav'>";
+<div class='small-3 columns left'>";
 include("left-nav.php");
 
 echo "
 </div>
-<div id='main'>";
+<div class='small-9 columns'>";
 
 echo resultBlock($errors,$successes);
 
 echo "
-<div id='regbox'>
+<div>
 <form name='updateAccount' action='".$_SERVER['PHP_SELF']."' method='post'>
 <p>
 <label>Password:</label>
