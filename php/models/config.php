@@ -11,7 +11,10 @@ while ($stmt->fetch()){
 	$settings[$name] = array('id' => $id, 'name' => $name, 'value' => $value);
 }
 $stmt->close();
-
+//SMS Gateway settings
+$SMS_USERNAME = 'Dummy';
+$SMS_PASSWORD = 'Dummy';
+$SMS_SENDER_ID = 'Dummy';
 //Set Settings
 $emailActivation = $settings['activation']['value'];
 $mail_templates_dir = "models/mail-templates/";
@@ -50,5 +53,4 @@ if(isset($_SESSION["userCakeUser"]) && is_object($_SESSION["userCakeUser"]))
 {
 	$loggedInUser = $_SESSION["userCakeUser"];
 }
-
 ?>
