@@ -1,5 +1,5 @@
 <?php
-$openshift_db = ''$_SERVER['OPENSHIFT_MYSQL_DB_HOST']':'$_SERVER['OPENSHIFT_MYSQL_DB_PORT']'';
+//$openshift_db = ''$_SERVER['OPENSHIFT_MYSQL_DB_HOST']':'$_SERVER['OPENSHIFT_MYSQL_DB_PORT']'';
 //Database Information
 if($_SERVER['HTTP_HOST'] == "localhost" )
 {
