@@ -85,10 +85,10 @@ include("left-nav.php");
 
 echo "
 </div>
-<div class='large-4 large-centered columns panel'>";
+<div class='small-9 columns'>";
 echo resultBlock($errors,$successes);
 echo "
-<div id='regbox'>
+<div class='large-4 large-centered  panel columns'>
 <form name='login' action='".$_SERVER['PHP_SELF']."' method='post' class='form-signin'>
         <h2 align='center'>Login</h2>
         <input type='text' name='username' class='form-control' placeholder='Username' autofocus>
