@@ -131,7 +131,6 @@ echo "
 
 </div>
 <div id='bottom'></div>
-</div>
-</body>
-</html>";
+</div>";
+include("models/footer.php");
 ?>

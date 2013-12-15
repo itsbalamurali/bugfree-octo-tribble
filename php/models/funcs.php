@@ -1,9 +1,4 @@
 <?php
-/*
-UserCake Version: 2.0.2
-http://usercake.com
-*/
-
 //Functions that do not interact with DB
 //------------------------------------------------------------------------------
 
@@ -145,28 +140,26 @@ function resultBlock($errors,$successes){
 	//Error block
 	if(count($errors) > 0)
 	{
-		echo "<div id='error'>
-		<a href='#' onclick=\"showHide('error');\">[X]</a>
+		echo "<div data-alert class='alert-box warning radius'>
 		<ul>";
 		foreach($errors as $error)
 		{
 			echo "<li>".$error."</li>";
 		}
 		echo "</ul>";
-		echo "</div>";
+		echo "<a href='#' class='close'>&times;</a></div>";
 	}
 	//Success block
 	if(count($successes) > 0)
 	{
-		echo "<div id='success'>
-		<a href='#' onclick=\"showHide('success');\">[X]</a>
+		echo "<div data-alert class='alert-box success radius'>
 		<ul>";
 		foreach($successes as $success)
 		{
 			echo "<li>".$success."</li>";
 		}
 		echo "</ul>";
-		echo "</div>";
+		echo "<a href='#' class='close'>&times;</a></div>";
 	}
 }
 
