@@ -16,7 +16,7 @@ echo"
 <html lang='en'>
 <head lang='en'>
 <meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <meta name='description' content=''>
 <meta name='author' content=''>
 <!-- Favicons -->
@@ -27,7 +27,23 @@ echo"
 <link rel='shortcut icon' href='./assets/ico/favicon.png'>
 <title>".$websiteName."</title>
 <!-- basic styles -->
-<link rel='stylesheet' href='./assets/css/foundation.min.css' />
+<link rel='stylesheet' href='./assets/css/foundation.min.css'>";
+echo'
+<style>
+.top-bar input[type="text"], .top-bar .button {
+    font-size: 0.77778rem;
+    position: relative;
+    top: 7px;
+}
+
+.top-bar input[type="text"] {
+    height: auto;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    font-size: 0.75rem;
+}
+</style>';
+echo"
 <script src='./assets/js/modernizr.js'></script>
 <script src='models/funcs.js' type='text/javascript'></script>
 </head>";
