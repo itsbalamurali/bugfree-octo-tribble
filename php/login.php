@@ -79,14 +79,13 @@ require_once("models/header.php");
 echo "
 <body>
 <div class='row'>
-<div class='row'>
 <h2>Login</h2>
 <div class='small-3 columns left'>";
 include("left-nav.php");
 
 echo "
 </div>
-<div class='large-4 small-centered columns panel'>";
+<div class='large-4 large-centered columns panel'>";
 echo resultBlock($errors,$successes);
 echo "
 <div id='regbox'>
@@ -99,7 +98,6 @@ echo "
         </label>
         <button class='button radius' type='submit' >Login</button>
       </form>
-</div>
 </div>
 </div>";
 include("models/footer.php");

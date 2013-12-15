@@ -80,21 +80,18 @@ require_once("models/header.php");
 echo "
 <body>
 <div class='row'>
-    <div class='row'>
-	<h2>Login</h2>
+	<h2>Register</h2>
 <div class='small-3 columns left'>";
 include("left-nav.php");
 
 echo "
 </div>
-<div class='large-4 small-centered columns panel'>";
+<div class='small-9 columns'>";
 echo resultBlock($errors,$successes);
 echo "
-<h2>Register</h2>
-
-<div id='regbox'>
+<div class='large-4 large-centered  panel columns'>
 <form name='newUser' action='".$_SERVER['PHP_SELF']."' method='post'>
-
+<h2 align='center'>Register</h2>
 <input type='text' name='username' placeholder='Username' >
 <input type='text' name='displayname' placeholder='Display Name' >
 <input type='password' name='password' placeholder='Password'>
@@ -105,7 +102,6 @@ echo "
 &nbsp;<br>
 <button class='button radius' type='submit'>Sign up</button>
 </form>
-</div>
 </div>
 </div>";
 include("models/footer.php");
